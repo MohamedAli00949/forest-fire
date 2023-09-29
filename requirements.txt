@@ -24,7 +24,7 @@ python-dateutil
 pytz
 requests
 six
-sklearn
+scikit-learn
 sniffio
 tzdata
 urllib3
