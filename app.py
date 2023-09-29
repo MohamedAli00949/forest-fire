@@ -1,5 +1,5 @@
 from flask import Flask, request, url_for, redirect, render_template
-import pickle
+import pickle5 as pickle
 import numpy as np
 
 
