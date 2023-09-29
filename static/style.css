@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(https://th.bing.com/th/id/OIP.0H-u_sT6Glp_eCZKCNfidwHaEK?pid=ImgDet&rs=1);
+  /*  background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Chelsea Market', cursive;
+    margin-bottom: 10%;*/
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Chelsea Market', cursive;
+
+
+}
+
+
+
+
+.cardbg{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: red;
+    padding:30px;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    color: white;
+    background: red;
+}
+.prediction{
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+
+.recipie-header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .recipie-header h1 {
+    color: #ea0a0a;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  .recipie-box span {
+    color: #363958;
+  }
+  .recipie-wrap {
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+  }
+  .recipie-box {
+    width: 25%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .recipie-box img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .recipie-box h2 {
+    margin: 15px 0;
+  }
+  .recipie-box p {
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+
+    
+  }
+  .recipie-box h2 span{
+
+    color: #ea0a0a;
+  }
+
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer h1 {
+    color: #f83b3b;
+    margin-bottom: 2rem;
+    font-family: "Berkshire Swash", cursive;
+  }
+  footer h1 span {
+    color: #666;
+  }
+
+  footer span {
+    color: #999;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+}
+section .mop{
+  padding-top: 100px;
+}
+
+
+.mo{
+  margin-top: 200px;
+  margin-left: 350px;
+}
+
+
+.recipie-box1{
+  margin-left: 250px;
+}
+.good{
+  padding-right: 40px;
+}
+
+
+
+
+
+.mo {
+  max-width: 600px;
+  /*margin: 0 auto;*/
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin-top: 350px;
+}
+
+.mo img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mo li {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+.mo li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+.mo li:hover {
+  background-color: #ddd;
+}
+
+.mo li.clicked {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
+
+
+.signin-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 250px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+

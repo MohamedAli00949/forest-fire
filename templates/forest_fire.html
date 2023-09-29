@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Forest Fire</title>
+  <link rel="icon" href="https://image.flaticon.com/icons/svg/2950/2950411.svg" type="image/icon type">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+ 
+</head>
+
+<body>
+<div class="container justify-content-center mt-2">
+  <h1 class="text-white mt-2">Forest Fire</h1>
+  <h5 class="text-white ">Nasa Space Apps Sohag</h5>
+  <form action='/predict' method="post">
+   <div class="row">
+     <div class="col-sm-12 col-lg-6 cardbg">
+       <div class="row">
+        <div class="col-12 mt-3 mb-1">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Temperature</label>
+            <input  class="form-control validate border border-warning" placeholder="Temperature in Celsius" name="Temperature" id="first_name" type="text" >
+          </div>
+         </div>
+         <div class="col-12 mb-3">
+          <label for="exampleInputEmail1">Oxygen</label> 
+          <input id="last_name" name="Oxygen" placeholder="Oxygen content in ppm"  type="text" class="validate form-control border border-warning">
+         </div>
+         <div class="col-12 mb-3">
+          <label for="exampleInputEmail1">Humidity</label>
+          <input  id="_name" name="Humidity" placeholder="Humidity %" type="text" class="validate form-control border border-warning">
+         </div>
+         <div class="ml-3 mb-1 mt-2">
+           <button type="submit" class="button">Predict</button>
+        </div>
+       </div>
+     </div>
+     <div class="col-sm-12 col-lg-4  d-flex align-items-center">
+      <h4 class="prediction">{{pred}}</h4>
+     </div>
+   </div>
+  </form>
+  </div>
+
+
+  <br/>
+
+
+  <div class="signin-container">
+    <h2>Sign In</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  
+
+
+  <div class="mo">
+    <h2>Some Countries are Vulnerable For Forest Fire</h2>
+    <img class="good" src="https://strangesounds.org/wp-content/uploads/2021/07/fires-around-the-world-1024x614.jpg" alt=""width="600" height="250" />
+    <ul>
+      <li>Spain</li>
+      <li>Portugal</li>
+      <li>Greece</li>
+      <li>Russia</li>
+      <li>Indonesia</li>
+      <li>Italy</li>
+      </ul>
+  </div>
+
+<br/>
+<!--
+  new section
+-->
+
+
+
+
+
+ <section class="recipie-section">
+    <div class="container">
+      <div class="recipie-header">
+        <h1>Reasons <span>Forest Fire</span></h1>
+        <p>Forest fires can occur for various reasons, both natural and human-induced
+          It is important to note that the prevalence of forest fires can vary depending on geographical location, 
+          climate, and local environmental factors.
+        </p>
+      </div>
+      <div class="recipie-wrap">
+        <div class="recipie-box">
+          <img src="https://th.bing.com/th/id/OIP.k5w_8DlHl0d1VT4yLoLAfgHaE6?pid=ImgDet&rs=1" alt=""  width="700" height="230" />
+          <h2>Forest Fire<span>Reason</span></h2>
+          <p>&#128507;Lightning: Lightning strikes during thunderstorms can ignite forest fires.</p>
+           <p>Volcanic Activity: Volcanic eruptions can release hot lava, ash, and gas, which can lead to fires in nearby forests.</p>
+           <p>Spontaneous Combustion: Decomposition of organic matter, such as peat or decaying vegetation, can generate heat and spontaneously ignite.</p>
+        </div>
+        <div class="recipie-box">
+          <img src="https://www.oregonlive.com/resizer/4HMDFJhizJa0MDYzcK67sI5MM90=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ZTVH6RQJFFDD3PTKRNWS4Z7SCA.jpg" alt="" width="700" height="230"/>
+          <h2>Forest Fire<span>Reason</span></h2>
+          <p>&#128507;Fuel Accumulation: Over time, dead leaves, branches, and other flammable materials accumulate on the forest floor. 
+            This fuel buildup provides ample material for fires to ignite and spread quickly.</p>
+        </div>
+        <div class="recipie-box">
+          <img src="https://live.staticflickr.com/3777/9532032026_0d75234f7e_b.jpg" alt="" width="700" height="230"/>
+          <h2>Forest Fire <span>Reason</span></h2>
+          <p>&#128507;Careless actions by individuals, such as discarding lit cigarettes,leaving 
+           campfires unattended, or improper disposal of flammable materials, can trigger forest fires..
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!-- -->
+  <section class="recipie-section">
+    <div class="container">
+      <div class="recipie-header">
+        <h1>Solutions To descreas Damage</h1>
+      </div>
+      <div class="recipie-wrap">
+        <div class="recipie-box">
+          <img src="https://th.bing.com/th/id/R.17e0635da76d86fbb857a94d772b6dd7?rik=5ibP5FReOTy4og&pid=ImgRaw&r=0" alt="" width="550" height="250"/>
+          <h2>fire-resistant plants </h2>
+          <p>Choose fire-resistant plants and trees for your garden, and regularly prune and maintain them.
+             Remove dead vegetation, dry leaves, and other debris from your property.</p>
+        </div>
+        <div class="recipie-box">
+          <img src="https://th.bing.com/th/id/R.6499acc504bcd7b6cda297079eec0c54?rik=E%2byfgxxc5CsEhw&pid=ImgRaw&r=0" alt=""width="600" height="250" />
+          <h2>Stay updated on fire danger levels</h2>
+          <p>Stay updated on fire danger levels and any fire restrictions or bans in your area.
+             Follow the guidance of local authorities and be prepared to evacuate if necessary</p>
+        </div>
+
+        <div class="recipie-box">
+          <img src="https://th.bing.com/th/id/OIP.CxDan4Ah-Hc8k4dOqbgbFwHaEc?pid=ImgDet&w=627&h=376&rs=1" alt=""width="600" height="250" />
+          <h2>Walls Against Fire</h2>
+          <p>Community Planning and Building Design: Incorporating fire-resistant materials and
+             design features into buildings and infrastructure in fire-prone areas can enhance their
+              resilience to wildfires. Community-level planning, including zoning regulations and
+               land-use planning, can help prevent new developments in high-risk fire zones and promote fire-adapted communities.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section class="recipie-section">
+    <div class="container">
+      <div class="recipie-header">
+        <h1>Plans to ensure the safety of yourself and others</h1>
+        <p>Here are some steps to consider when creating an evacuation plan</p>
+      </div>
+     
+        <div class="recipie-box1">
+          <img src="https://th.bing.com/th/id/R.11b1dfda017ea105bf5bd431d387a556?rik=JMoJ%2bq7OScxm1g&pid=ImgRaw&r=0" alt="" width="600" height="250" />
+          <h2>Prepare an emergency plan</h2>
+          <p>Develop an emergency plan for your household that includes evacuation routes and a designated meeting point.
+             Have essential supplies ready, such as a "go bag" with important documents, medications, and emergency provisions
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h1>Team<span>Stellar Minds</span></h1>
+    <span> &copy; Nasa Space Apps Sohag</span>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+ 
+
+  
+
+  </body>
+</html>
+
